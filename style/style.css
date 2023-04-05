@@ -1,0 +1,81 @@
+/**
+
+Universal
+
+**/
+
+.hidden{
+	display: none !important;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/**
+
+Main Game Area
+
+**/
+
+#game{
+	display: table;
+	width:100%;
+}
+#game #teams{
+	display: table-row;
+}
+#game .score-box{
+	margin-bottom: 20px;
+}
+
+#game .score-box{
+	display: table-cell;
+}
+#game .score-box.current .team-score{
+	border: 1px solid red;
+}
+#game .score-box.current .team-title{
+	color: red;
+}
+#game .score-box .team-title{
+	text-align: center;
+	font: 2em "Arial", sans-serif;
+}
+#game .score-box .team-score{
+	width: 100%;
+	text-align: center;
+	transition: color .5s;
+	font-size: 2em;
+	border: 1px solid black;
+}
+
+#gameArea{
+	border: 1px solid black;
+	border-top: 0;
+	padding: 0;
+}
+
+#point-select{
+	position: fixed;
+	top: 10%; left: 10%;
+	height: 80%; width: 80%;
+	border: 1px solid black;
+	background: white;
+	
+	 /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+}
+
+
+/**
+
+Hidden Features
+
+**/
+
+#hidden-template>*{
+	display: none;
+}
